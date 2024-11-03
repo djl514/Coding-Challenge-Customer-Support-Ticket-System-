@@ -48,3 +48,6 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     .then(tickets => {
         displayCustomerOrders(tickets);
     })
+    .finally(()=> {
+        console.log('Complete!');
+    })
